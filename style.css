@@ -370,7 +370,8 @@ header .navbar ul li a:hover{
     display: none;
 }
 .down img{
-    height: 90px;
+    height: 1.1rem;
+    width: 1.2rem;
 }
 
 
