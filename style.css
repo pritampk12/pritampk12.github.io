@@ -459,5 +459,8 @@ header .navbar ul li a:hover{
     .contact .row form{
         margin:3rem 0;
     }
+    .down img{
+        size: 50px;
+    }
 
  }
