@@ -369,6 +369,9 @@ header .navbar ul li a:hover{
     z-index: 100;
     display: none;
 }
+.down img{
+    height: 90px;
+}
 
 
 
