@@ -212,13 +212,14 @@
 
     </div>
 
-    <form action="#contact">
+    <form onsubmit="return myfun()">
   
         <input type="text" placeholder="name" class="box" name="name">
         <input type="email" placeholder="email" class="box" name="email"> 
-        <input type="text" placeholder="project" class="box" name="project">
-        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message" name="message"></textarea>
-        <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+        <input type="text" placeholder="phone number" class="box" id="mobilenumber" name="project" value="">
+        <span id="messages"></span> <br></br>
+        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message" ></textarea>
+        <input type="submit" value="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
 
     </form>
 

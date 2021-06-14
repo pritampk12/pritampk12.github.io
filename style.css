@@ -388,8 +388,9 @@ header .navbar ul li a:hover{
     color: var(--yellow);;
     
 }
-
-
+#messages{
+    color: red;
+}
 
 
 

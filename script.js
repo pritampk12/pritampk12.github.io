@@ -36,3 +36,21 @@ $(document).ready(function(){
     });
   
   });
+  function myfun(){
+    var a= document.getElementById("mobilenumber").value;
+    if(a==""){
+      document.getElementById("messages").innerHTML="fill it first";
+      return false;
+    }
+
+    if(a.length<10 || a.length>=11){
+      document.getElementById("messages").innerHTML="Phone number must be 10 digits";
+      return false;
+    }
+  
+    if(isNaN(a)){
+      document.getElementById("messages").innerHTML="Only numeric value";
+      return false;
+    }
+  }
+  
