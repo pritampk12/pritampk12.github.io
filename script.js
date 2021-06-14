@@ -1,3 +1,5 @@
+let name=prompt("Enter your name");
+document.getElementById("gut").innerHTML=`Welcome MR. ${name} to my website`;
 $(document).ready(function(){
 
     $('#menu').click(function(){
@@ -53,4 +55,6 @@ $(document).ready(function(){
       return false;
     }
   }
+  // let name = prompt("Enter your name", "Guest");
+  // document.getElementById("gut").innerHTML=`Welcome MR. ${name} to my page`;
   

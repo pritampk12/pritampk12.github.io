@@ -391,6 +391,13 @@ header .navbar ul li a:hover{
 #messages{
     color: red;
 }
+#gut{
+    color:white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 12px;
+    font-family: 'Nunito', sans-serif;
+}
 
 
 
@@ -450,7 +457,7 @@ header .navbar ul li a:hover{
  
  }
 
-@media (max-width:400px){
+@media (max-width:416px){
 
     header{
         width: 100vw;
@@ -477,6 +484,11 @@ header .navbar ul li a:hover{
     }
     .down img{
         size: 50px;
+    }
+    #gut{
+        font-size: 1.4rem;
+        margin: 6px;
+       ;
     }
 
  }
