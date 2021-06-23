@@ -40,6 +40,9 @@ body{
     background:#111;
     overflow-x: hidden;
     padding-left: 35rem;
+    
+        
+      
 }
 
 section{
@@ -146,6 +149,10 @@ header .navbar ul li a:hover{
     padding:1rem 1.5rem;
     z-index: 1000;
     display: none;
+}
+.user img:hover{
+    transform: scale(1.5);
+
 }
 
 .home{
@@ -398,8 +405,21 @@ header .navbar ul li a:hover{
     margin: 12px;
     font-family: 'Nunito', sans-serif;
 }
+#btnn {
+    color: black;
+    background-color: white;
+    padding: 8px 10px;
+    border-radius: 10px;
+    transition: all .61 ease-in-out .2s;
+}
+#btnn:hover {
+    color: black;
+    font-size: 1.5rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: underline;
+    background-color:var(--yellow);
 
-
+}
 
 
 

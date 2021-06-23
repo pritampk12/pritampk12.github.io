@@ -1,5 +1,5 @@
-let name=prompt("Enter your name");
-document.getElementById("gut").innerHTML=`Welcome MR. ${name} to my website`;
+// let name=prompt("Enter your name");
+// document.getElementById("gut").innerHTML=`Welcome MR. ${name} to my website`;
 $(document).ready(function(){
 
     $('#menu').click(function(){
@@ -55,6 +55,59 @@ $(document).ready(function(){
       return false;
     }
   }
+  let img=document.querySelector('img');
+  // let btnn= document.querySelector('#btnn');
+  var imgtrackers='f';
+  function change(){
+    if(imgtrackers=='f'){
+      img.src='/images/pk1.jpg';
+      imgtrackers='t';
+
+    }
+    else if(imgtrackers=='t'){
+      img.src='/images/pk2.jpg';
+      imgtrackers='s';
+
+    }
+    else if(imgtrackers=='s'){
+      img.src='/images/pk3.jpg';
+       imgtrackers='n';
+
+    }
+    else{
+      img.src='/images/logo.jpeg';
+       imgtrackers='f';
+
+    }
+
+
+    
+  }
+  
+  
+  // if(imgtrackers=='t'){
+  //   btnn.addEventListener('click',()=>{
+      
+      
+  //     img.src='/images/pk1.jpg';
+  //     imagetrackers='f';
+  //     console.log("hello bro");
+      
+      
+      
+      
+  //   })
+    
+    
+  // }
+  // else{
+  //   btnn.addEventListener('click',()=>{
+  //     img.src='/images/pk3.jpg';
+  //      imgtrackers='f';
+  //     })
+  //   }
+
+  
   // let name = prompt("Enter your name", "Guest");
   // document.getElementById("gut").innerHTML=`Welcome MR. ${name} to my page`;
   
