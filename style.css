@@ -12,6 +12,7 @@
     outline: none; border:none;
     text-transform: capitalize;
     transition: all .2s linear;
+    color: white;
 }
 
 *::selection{
@@ -76,7 +77,7 @@ section{
     font-size: 4rem;
     padding:1rem;
     border-bottom: .1rem solid #fff4;
-    color:#fff;
+    /* color:#fff; */
 }
 
 .heading span{
@@ -95,7 +96,9 @@ header{
     justify-content: center;
     flex-flow: column;
     text-align: center;
+    border-right: 3px solid black;
 }
+
 
 header .user img{
     height:17rem;
@@ -108,12 +111,12 @@ header .user img{
 
 header .user .name{
     font-size: 3.5rem;
-    color:#fff;
+    /* color:#fff; */
 }
 
 header .user .post{
     font-size: 2rem;
-    color:#eee;
+    /* color:#eee; */
 }
 
 header .navbar{
@@ -131,7 +134,7 @@ header .navbar ul li a{
     padding:1rem;
     margin:1.5rem 0;
     background:#333;
-    color:#fff;
+    /* color:#fff; */
     font-size: 2rem;
     border-radius: 5rem;
 }
@@ -162,15 +165,38 @@ header .navbar ul li a:hover{
     flex-flow: column;
     padding:0 15rem;
 }
+.home .theme{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  
+}
+.home .theme .themechanger{
+    
+
+    padding: 1.2rem 1.3rem;
+    /* border-radius: 10px; */
+    
+   
+  
+}
+.home .theme .themechanger img{
+  width: 5rem;
+  height: 4rem;
+  background-size: 100%;
+   
+  
+}
+
 
 .home h3{
     font-size: 2.5rem;
-    color:#fff;
+    /* color:#fff; */
 }
 
 .home h1{
     font-size:5rem;
-    color:#fff;
+    /* color:#fff; */
 }
 
 .home h1 span{
@@ -179,7 +205,7 @@ header .navbar ul li a:hover{
 
 .home p{
     font-size:2rem;
-    color:#eee;
+    /* color:#eee; */
     padding: 1rem 0;
 }
 
@@ -205,7 +231,7 @@ header .navbar ul li a:hover{
 }
 
 .about .row .info h3 span{
-    color:#eee;
+    /* color:#eee; */
     padding:0 .5rem;
 }
 
@@ -231,7 +257,7 @@ header .navbar ul li a:hover{
 
 .about .row .counter .box h3{
     font-size: 2rem;
-    color:#fff;
+    /* color:#fff; */
 }
 
 .education .box-container{
@@ -254,20 +280,20 @@ header .navbar ul li a:hover{
 .education .box-container .box span{
     font-size: 1.3rem;
     background:#222;
-    color:#fff;
+    /* color:#fff; */
     border-radius: 5rem;
     padding:.5rem 2.5rem;
 }
 
 .education .box-container .box h3{
     font-size: 2rem;
-    color:#fff;
+    /* color:#fff; */
     padding-top: 1.5rem;
 }
 
 .education .box-container .box p{
     font-size: 1.4rem;
-    color:#eee;
+    /* color:#eee; */
     padding: 1rem 0;
 }
 
@@ -280,7 +306,7 @@ header .navbar ul li a:hover{
     line-height: 5rem;
     text-align: center;
     font-size: 2rem;
-    color:#fff;
+    /* color:#fff; */
     background:var(--yellow);
 }
 
@@ -335,7 +361,7 @@ header .navbar ul li a:hover{
     padding:1.5rem;
     margin:1rem 0;
     background:#3333;
-    color:#fff;
+    /* color:#fff; */
     text-transform: none;
     font-size: 1.7rem;
     width:100%;
@@ -352,7 +378,7 @@ header .navbar ul li a:hover{
 
 .contact .row .content .title{
     text-transform: uppercase;
-    color:#fff;
+    /* color:#fff; */
     font-size: 3rem;
     padding-bottom: 2rem;
 }
@@ -361,7 +387,7 @@ header .navbar ul li a:hover{
     display: flex;
     align-items: center;
     font-size: 2rem;
-    color:#eee;
+    /* color:#eee; */
     padding:1rem 0;
     font-weight: normal;
 }
@@ -384,7 +410,7 @@ header .navbar ul li a:hover{
 .info a{
     font-size: 2.6rem;
     
-    color: white;
+    /* color: white; */
     border-radius: 22px;
     border: 2px solid white;
     padding: 0 10px;
