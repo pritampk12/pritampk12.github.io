@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pritam ka gaana</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.10.0/js/all.js" integrity="sha384-BfzGEucsDAHnSR99xBvG8cNHx7h6sEbKJejtvqlMrN8nMi3gP2ds+sMAjWfWnZyn" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      
+
+        <div class="main_div">
+            <h1 id="header">Pritam ke gaane</h1>
+            <div class="music_container">
+                <h2 id="title">Tere Naal</h2>
+                <h3 id="artist">vishal mishra</h3>
+                <div class="img_container">
+                    <img src="/theme11.jfif" alt="">
+                </div>
+                <div>
+                    <audio src="/music/Tere Naal(MP3_160K)_1.mp3" ></audio>
+                    <!-- controls -->
+                    <div class="music_control">
+                        <i class="btn fas fa-backward" id="prev" title="Previous"></i>
+                        <i class="btn fas fa-play main-button" id="play" onclick="play()" title="play"></i>
+                        <i class="btn fas fa-forward" id="next" onclick="nextsong()" title="Forward"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const img=document.querySelector("img");
+        let music=document.querySelector("audio");
+        let artist= document.getElementById("artist");
+        let title= document.getElementById("title");
+        let prev= document.getElementById("prev");
+        let next= document.getElementById("next");
+        const songs=[
+            {
+                name:"Tere Naal(MP3_160K)_1.mp3",
+                title:"tere naal",
+                artist:"vishal mishra",
+                img:"theme11.jfif",
+            },
+            {
+                name:"song2.mp3",
+                title:"Haule haule",
+                artist:"i dont know",
+                img:"theme22.jfif",
+            },
+            {
+                name:"song3.mp3",
+                title:"Filhal 2",
+                artist:"taklu",
+                img:"theme33.jfif",
+            },
+            {
+                name:"song4.mp3",
+                title:"Hunn javan",
+                artist:"no idea",
+                img:"theme44.jpg",
+            },
+        ];
+
+        let ch='p';
+       function play(){
+         
+           if(ch=='p'){
+           console.log("played");
+           music.play();
+           img.classList.add("anime");
+           ch='q';
+           }
+           else if(ch=='q'){
+            console.log("paused");
+           music.pause();
+           img.classList.remove("anime");
+           ch='p';
+           }
+       }
+       const loadsong=(songs)=>{
+           title.textContent=songs.title;
+           artist.textContent=songs.artist;
+           music.src="music/"+songs.name;
+           img.src=songs.img;
+         
+
+       };
+       let songindex=0;
+       const nextsong=()=>{
+           songindex=(songindex-1 + songs.length)%songs.length;
+           console.log("hhh");
+        loadsong(songs[songindex]);
+        play();
+
+       }
+       const prevsong=()=>{
+           songindex=(songindex+1)%songs.length;
+           console.log("hhh");
+        loadsong(songs[songindex]);
+        play();
+
+       }
+    // loadsong(songs[1]);
+    // next.addEventListener('click', nextsong);
+    // prev.addEventListener('click', prevsong);
+
+    </script>
+    </body>
+</html>
