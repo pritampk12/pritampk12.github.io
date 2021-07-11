@@ -93,7 +93,7 @@ img{
 
 }
 .anime{
-   animation: rotateplayer 3s linear  infinite;
+   animation: rotateplayer 4s linear  infinite;
 
 }
 @keyframes rotateplayer{
@@ -115,6 +115,7 @@ img{
     height: 0.5rem;
     border-radius: 4rem;
     position: relative;
+    background-color: #c2b1b1;
     transition: all 1s linear;
     cursor: pointer;
     -webkit-appearance: none;
@@ -125,7 +126,7 @@ img{
     position: absolute;
     top: 0;
     left: 0;
-    width: 30%;
+    width: 0%;
     height: 100%;
     background-color: blue;
     border-radius: 2rem;

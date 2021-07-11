@@ -35,7 +35,7 @@
 
                     <!-- controls -->
                     <div class="music_control">
-                        <i class="btn fas fa-backward" id="prev" title="Previous"></i>
+                        <i class="btn fas fa-backward" id="prev" onclick="prevsong()" title="Previous"></i>
                         <i class="btn fas fa-play main-button" id="play" onclick="play()" title="play"></i>
                         <i class="btn fas fa-forward" id="next" onclick="nextsong()" title="Forward"></i>
                     </div>
@@ -50,6 +50,9 @@
         let title= document.getElementById("title");
         let prev= document.getElementById("prev");
         let next= document.getElementById("next");
+        let current_time=document.getElementById('current');
+        let duration_time=document.getElementById('duration');
+        const progress_div=document.getElementById('progress_div');
         const songs=[
             {
                 name:"Tere Naal(MP3_160K)_1.mp3",
@@ -75,6 +78,38 @@
                 artist:"no idea",
                 img:"theme44.jpg",
             },
+            {
+                name:"song5.mp3",
+                title:"Kunn faya",
+                artist:"AR RAHMAN",
+                img:"pritam.jpg",
+            },
+            {
+                name:"song6.mp3",
+                title:"Teri hogaiyaan 2",
+                artist:"no idea",
+                img:"theme11.jfif",
+            },
+            {
+                name:"song7.mp3",
+                title:"mila yunn",
+                artist:"no idea",
+                img:"pritam.jpg",
+            },
+            
+            {
+                name:"song8.mp3",
+                title:"tu mohabbat hain",
+                artist:"no idea",
+                img:"pritam.jpg",
+            },
+            {
+                name:"song9.mp3",
+                title:"Jeena",
+                artist:"Arijit singh",
+                img:"pritam.jpg",
+            },
+
         ];
 
         let ch='p';
@@ -103,19 +138,64 @@
        };
        let songindex=0;
        const nextsong=()=>{
+           songindex=(songindex+1)%songs.length;
+           console.log("hhh");
+           loadsong(songs[songindex]);
+           play();
+           
+        }
+        const prevsong=()=>{
            songindex=(songindex-1 + songs.length)%songs.length;
            console.log("hhh");
         loadsong(songs[songindex]);
         play();
 
        }
-       const prevsong=()=>{
-           songindex=(songindex+1)%songs.length;
-           console.log("hhh");
-        loadsong(songs[songindex]);
-        play();
+    //    progress js work 
+music.addEventListener('timeupdate',(e)=>{
+// console.log(e);
+const {currentTime, duration}=e.srcElement;
+let progress_time= (currentTime/duration)*100;
+let progress=document.getElementById('progress');
+progress.style.width=`${progress_time}%`;
+// music duration update 
 
-       }
+
+let min_duration= Math.floor(duration/60);
+let sec_duration= Math.floor(duration%60);
+let total_duration=`${min_duration}:${sec_duration}`;
+if(duration){
+
+    duration_time.textContent=`${total_duration}`;
+}
+// current duration update
+
+let min_currenttime= Math.floor(currentTime/60);
+let sec_currenttime= Math.floor(currentTime%60);
+if(sec_currenttime<10){
+    sec_currenttime=`0${sec_currenttime}`;
+}
+let total_currenttime=`${min_currenttime}:${sec_currenttime}`;
+if(currentTime){
+
+   current_time.textContent=`${total_currenttime}`;
+}
+
+
+});
+
+progress_div.addEventListener('click', (e)=>{
+    console.log("event fired");
+    const { duration}=music;
+
+    let move_progress= (event.offsetX/event.srcElement.clientWidth)*duration;
+    music.currentTime=move_progress;
+
+})
+music.addEventListener('ended',()=>{
+    nextsong();
+})
+
     // loadsong(songs[1]);
     // next.addEventListener('click', nextsong);
     // prev.addEventListener('click', prevsong);
