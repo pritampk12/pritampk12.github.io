@@ -103,6 +103,44 @@ img{
     }
 
 }
+/* .progress style */
+.progressbar_container{
+    width: 100%;
+    height: auto;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+.progress_div{
+    width: 100%;
+    height: 0.5rem;
+    border-radius: 4rem;
+    position: relative;
+    transition: all 1s linear;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+
+}
+.progress{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background-color: blue;
+    border-radius: 2rem;
+    transition: all 1s linear;
+    cursor: pointer;
+    -webkit-appearance: none;
+    appearance: none;
+
+}
+.progress_duration_meter{
+display: flex;
+justify-content: space-between;
+font-size: 1.2rem;
+}
+
  /* .music_control .main-button{
 width: 5rem;
 height: 5rem;
