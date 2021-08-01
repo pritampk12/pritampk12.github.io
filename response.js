@@ -29,6 +29,12 @@ function getBotResponse(inputval) {
     else if(input.includes("madarchod")){
        return "tu madarchod";
       }
+    else if(input.includes("heta")){
+       return "tor maar bl malakar tui malakar nani ba?";
+      }
+    else if(input.includes("oy")){
+       return "kita oy bhaag";
+      }
     else if(input.includes("bsdk")){
        return "tera baap bsdk";
       }
@@ -42,7 +48,7 @@ function getBotResponse(inputval) {
        return "you had taken my boss name";
       }
     else if(input.includes("yahaiyou")){
-       return "yahaiyou apna ek number ka chutiya hain";
+       return "yahaiyou apna ek number ka mast aadmi hain";
       }
     else if(input.includes("pk")){
        return "pk nahi pritam hu main";
