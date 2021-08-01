@@ -96,6 +96,11 @@ header .icons a:hover{
 
 
 }
+#chat-timestamp{
+    text-align: center;
+    font-size: 1.8rem;
+   
+}
 
 .home{
     padding: 0;
