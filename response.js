@@ -32,6 +32,12 @@ function getBotResponse(inputval) {
     else if(input.includes("heta")){
        return "tor maar bl malakar tui malakar nani ba?";
       }
+    else if(input.includes("bal")){
+       return "bal kara kos thawba khaibe";
+      }
+    else if(input.includes("bl")){
+       return "bl kara kos thawba khaibe";
+      }
     else if(input.includes("oy")){
        return "kita oy bhaag";
       }
