@@ -87,6 +87,12 @@ function getBotResponse(inputval) {
     else if(input.includes("coding")){
        return "coding sikhna hain toh harry bhai se free main sikho";
       }
+    else if(input.includes("kala")){
+       return "tor bou re giya ko kala c**** raag uthais naa bl";
+      }
+    else if(input.includes("kalua")){
+       return "kalua mana kalua madarchod";
+      }
     else if(input.includes("nasheri")){
        return "haha.nasheri ko bol phookna kam kare";
       }
