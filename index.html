@@ -1,488 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pritam ka bazaar</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="/chat.css">
+    <title>Pritam website</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/style.css">
+
 </head>
-
 <body>
-    <!-- header section starts   -->
-    <header>
-        <div id="menu-bar" class="fas fa-bars"></div>
+    
+<!-- header section starts  -->
+<div id="all">
 
-
-        <a href="#" class="logo">Pritamdeal</a>
-        <nav class="navbar" id="#navbar">
-            <a href="#home">home</a>
-            <a href="#products">products</a>
-            <a href="#featured">featured</a>
-            <a href="#review">review</a>
-        </nav>
-        <div class="icons">
-            <a href="#" class="fas fa-heart"></a>
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <a href="#" class="fas fa-user"></a>
-        </div>
-
-    </header>
-    <!-- header section ends   -->
-    <!-- CHAT BAR BLOCK -->
-    <div class="chat-bar-collapsible">
-        <button id="chat-button" type="button" class="collapsible">Chat with us!
-            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
-        </button>
-
-        <div class="content">
-            <div class="full-chat-block">
-                <!-- Message Container -->
-                <div class="outer-container">
-                    <div class="chat-container">
-                        <!-- Messages -->
-                        <div id="chatbox">
-                            <h5 id="chat-timestamp"></h5>
-                            <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
-                        </div>
-
-                        <!-- User input box -->
-                        <div class="chat-bar-input-block">
-                            <div id="userInput">
-                                <input id="textInput" class="input-box" type="text" name="msg"
-                                    placeholder="Tap 'Enter' to send a message">
-                                <p></p>
-                            </div>
-
-                            <div class="chat-bar-icons">
-                                <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"
-                                    onclick="heartButton()"></i>
-                                <i id="chat-icon";" class="fas fa-paper-plane"
-                                    onclick="sendButton()"></i>
-                                   
-                            </div>
-                        </div>
-
-                        <div id="chat-bar-bottom">
-                            <p></p>
-                        </div>
-
+            <header id="head">
+                
+                <div class="user">
+                    <img src="/images/logo.jpeg" alt="">
+                    <i class="fas fa-arrow-right iconimg" onclick="change()"></i>
+                    
+                    <h3 class="name">Pritam Das</h3>
+                    <p class="post">Web Developer</p>
+                </div>
+                
+                
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#education">education</a></li>
+                        <li><a href="#portfolio">portfolio</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+                
+            </header>
+            
+            <!-- header section ends -->
+            
+            <div id="menu" class="fas fa-bars"></div>
+            
+            <!-- home section starts  -->
+            
+            <section class="home" id="home">
+                
+                <div class="form-check form-switch theme">
+                    <input class="form-check-input " type="checkbox" id="flexSwitchCheckDefault">
+                    <label class="form-check-label dd" onclick="theme()" for="flexSwitchCheckDefault">Dark mode</label>
+                  </div>
+                
+                
+                <h3 class="h3">HI THERE !</h3>
+                <span class="gt" id="gut"></span>
+                
+                
+                <h1 class="h1">I'M <span class="span">Pritam Das</span></h1>
+                <p class="para">I am a 2nd year student of Assam University pursuing B.Tech in Computer Science Engineering.  
+                </p>
+                <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+                
+            </section>
+            
+            <!-- home section ends -->
+            
+            <!-- about section starts  -->
+            
+            <section class="about" id="about">
+                
+                <h1 class="heading h1"> <span>about</span> me </h1>
+                
+                <div class="row">
+                    
+                    <div class="info">
+                        <h3 class="tut"> <span id="span1"> name : </span> Pritam Das </h3>
+                        <h3 class="tut"> <span id="span2"> age : </span> 20 </h3>
+                        <h3 class="tut"> <span id="span3"> qualification : </span> B.Tech </h3>
+                        <h3 class="tut"> <span id="span4"> post : </span> front end developer </h3>
+                        <h3 class="tut"> <span id="span5"> language : </span> English </h3>
+                        <a href="https://drive.google.com/file/d/1juoyN4SDBKqjeGHTVJDNZon2eeC367NB/view?usp=drivesdk"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
                     </div>
+                    
+                    <div class="counter">
+                        
+                        <div class="box">
+                    <span>1+</span>
+                    <h3>years of experience</h3>
                 </div>
-
+                
+                <div class="box">
+                    <span>10+</span>
+                    <h3>project completed</h3>
+                </div>
+                
+                
+                
+                
             </div>
+            
         </div>
 
-    </div>
-    <!-- home section -->
-    <section class="home" id="home">
-        <div class="slide-container active">
-            <div class="slide slide1">
+        </section>
+
+        <!-- about section ends -->
+
+        <!-- education section starts  -->
+
+        <section class="education" id="education">
+            
+            <h1 class="heading"> my <span>education</span> </h1>
+            
+            <div class="box-container">
+                
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2017</span>
+                    <h3 class="edu">HSSLC</h3>
+                    <p class="edu">Completed my HSSLC from Golden Valley H.S school in 2017</p>
+                </div>
+                
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2019</span>
+                    <h3 class="edu">HSLC</h3>
+                    <p class="edu">Completed my HSLC from Golden Valley H.S school in 2019</p>
+                </div>
+                
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2021</span>
+                    <h3 class="edu">front end development</h3>
+                    <p class="edu">Certified as a frontend developer</p>
+                </div>
+                
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2021</span>
+                    <h3 class="edu">Backend</h3>
+                    <p class="edu">Also can handle backend </p>
+                </div>
+                
+                <div class="box">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>2020</span>
+                <h3 class="edu">DBMS</h3>
+                <p class="edu">Completed courses in MongoDB, mySQL, Oracle</p>
+            </div>
+            
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2021</span>
+                <h3 class="edu">Python C/C++ Java Javascript </h3>
+                <p class="edu">knows all these languages </p>
+            </div>
+            
+        </div>
+
+        </section>
+
+        <!-- education section ends -->
+
+        <!-- portfolio section starts  -->
+
+        <section class="portfolio" id="portfolio">
+            
+            <h1 class="heading"> my <span>gang</span> </h1>
+            
+            <div class="box-container" >
+                
+                <div class="box">
+                    <img src="/images/kola.jpg" alt="">
+
+                </div>
+                
+                <div class="box">
+                    <img src="/images/vimal.jpeg" alt="">
+                </div>
+                
+                <div class="box">
+                    <img src="/images/chinnu.jpeg" alt="">
+                </div>
+                
+                <div class="box">
+                    <img src="/images/yahaiyou.jpeg" alt="">
+                </div>
+                
+                <div class="box">
+                    <img src="/images/nasha.jpeg" alt="">
+                </div>
+                
+                <div class="box">
+                    <img src="/images/WhatsApp Image 2021-06-09 at 11.26.26 PM.jpeg" alt="">
+                </div>
+                
+            </div>
+            
+        </section>
+
+        <!-- portfolio section ends -->
+
+        <!-- contact section starts  -->
+
+        <section class="contact" id="contact">
+            
+            <h1 class="heading"> <span>contact</span> me </h1>
+            
+            <div class="row">
+                
                 <div class="content">
-                    <span>SOT University Red Shoe</span>
-                    <h3>SOT metcon Shoess</h3>
-                    <p>Here you will get all Assam university Hoodies and T-shirts Shoes. Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Fugit, modi.</p>
-
-                    <a href="#" class="btn fa-shopping-cart">add to cart</a>
-
-
-
-                </div>
-
-                <div class="image">
-                    <img src="/images/home-shoe-1.png" alt="" class="shoe">
-                    <img src="/images/home-text-1.png" alt="" class="text">
-                </div>
-            </div>
-        </div>
-        <div class="slide-container">
-            <div class="slide slide2">
-                <div class="content">
-                    <span>SOT University Blue Shoe</span>
-                    <h3>SOT CSE Shoe</h3>
-                    <p>Here you will get all Assam university Hoodies and T-shirts Shoes. Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Fugit, modi.</p>
-                    <a href="#" class="btn fa-shopping-cart">add to cart</a>
-                </div>
-                <div class="image">
-                    <img src="/images/home-shoe-2.png" alt="" class="shoe">
-                    <img src="/images/home-text-2.png" alt="" class="text">
-                </div>
-            </div>
-        </div>
-        <div class="slide-container">
-            <div class="slide slide3">
-                <div class="content">
-                    <span>SOT University Yellow Shoe</span>
-                    <h3>SOT CSE Shoes</h3>
-                    <p>Here you will get all Assam university Hoodies and T-shirts Shoes. Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Fugit, modi.</p>
-                    <a href="#" class="btn fa-shopping-cart">add to cart</a>
-                </div>
-                <div class="image">
-                    <img src="/images/home-shoe-3.png" alt="" class="shoe">
-                    <img src="/images/home-text-3.png" alt="" class="text">
-                </div>
-            </div>
-        </div>
-        <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
-        <div id="right" class="fas fa-chevron-right" onclick="next()"></div>
-
-    </section>
-    <!-- home section ends  -->
-
-
-    <!-- service section starts  -->
-    <section class="service">
-        <div class="box-container">
-            <div class="boxx">
-                <i class="fas fa-shipping-fast"></i>
-                <h3>fast delivery</h3>
-                <p>If you live near irongmara or in University Hostel you will get the delivery within 2-3days</p>
-            </div>
-            <div class="boxx">
-                <i class="fas fa-undo"></i>
-                <h3>7days replacemens</h3>
-                <p>If you live near irongmara or in University Hostel you will get the delivery within 2-3days</p>
-            </div>
-            <div class="boxx">
-                <i class="fas fa-headset"></i>
-                <h3>24/7 you can chat with nasheri</h3>
-                <p>If you live near irongmara or in University Hostel you will get the delivery within 2-3days</p>
-            </div>
-        </div>
-    </section>
-    <!-- service section ends  -->
-    <!-- product section starts  -->
-    <section class="products" id="products">
-        <h1 class="heading">Latest <span>products</span></h1>
-        <div class="box-container">
-
-            <div class="boxx">
-                <div class="icons">
-                    <a href="" class="fas fa-heart"></a>
-                    <a href="" class="fas fa-share"></a>
-                    <a href="" class="fas fa-eye"></a>
-                </div>
-
-                <img src="/images/product-1.png" alt="">
-                <div class="content">
-                    <h3>nike shoes</h3>
-                    <div class="price">Rs.899.99 <span>Rs. 1999.90</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                    
+                    <h3 class="title con">contact info</h3>
+                    
+                    <div class="info">
+                        <h3 class="con"> <i class="fas fa-envelope"></i> pritampdpk333@@gmail.com </h3>
+                        <h3 class="con"> <i class="fas fa-phone"></i> 9612926861 </h3>
+                        <h3 class="con"> <i class="fas fa-phone"></i> 8257902203 </h3>
+                        <h3 class="con"> <i class="fas fa-map-marker-alt"></i> tripura, India-799253. </h3>
+                        <a class="con" href="https://forms.gle/iNksQoTMf9ji2YWv6">Click Here</a>
+                        <h3 class="con">The contact from is currently not working.Click on the above button </h3>
+                        
                     </div>
-
+                    
                 </div>
-
-                <a href="#" class="btn">add to cart</a>
+                
+                <form onsubmit="return myfun()">
+                    
+                    <input type="text" placeholder="name" class="box" name="name">
+                    <input type="email" placeholder="email" class="box" name="email"> 
+                    <input type="text" placeholder="phone number" class="box" id="mobilenumber" name="project" value="">
+                    <span id="messages"></span> <br></br>
+                    <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message" ></textarea>
+                    <input type="submit" value="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+                    
+                </form>
+                
             </div>
-            <div class="boxx">
-                <div class="icons">
-                    <a href="#" class="fas fa-heart"></a>
-                    <a href="#" class="fas fa-share"></a>
-                    <a href="#" class="fas fa-eye"></a>
-                </div>
-                <img src="/images/product-2.png" alt="">
-                <div class="content">
-                    <h3>nike shoes</h3>
-                    <div class="price">Rs.899.99 <span>Rs. 999.90</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
+            
+        </section>
 
-                </div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
-            <div class="boxx">
-                <div class="icons">
-                    <a href="" class="fas fa-heart"></a>
-                    <a href="" class="fas fa-share"></a>
-                    <a href="" class="fas fa-eye"></a>
-                </div>
-                <img src="/images/product-3.png" alt="">
-                <div class="content">
-                    <h3>nike shoes</h3>
-                    <div class="price">Rs.899.99 <span>Rs. 999.90</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
+        <!-- contact section ends -->
 
-                </div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
-            <div class="boxx">
-                <div class="icons">
-                    <a href="" class="fas fa-heart"></a>
-                    <a href="" class="fas fa-share"></a>
-                    <a href="" class="fas fa-eye"></a>
-                </div>
-                <img src="/images/product-4.png" alt="">
-                <div class="content">
-                    <h3>nike shoes</h3>
-                    <div class="price">Rs.899.99 <span>Rs. 999.90</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
 
-                </div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
-            <div class="boxx">
-                <div class="icons">
-                    <a href="" class="fas fa-heart"></a>
-                    <a href="" class="fas fa-share"></a>
-                    <a href="" class="fas fa-eye"></a>
-                </div>
-                <img src="/images/product-5.png" alt="">
-                <div class="content">
-                    <h3>nike shoes</h3>
-                    <div class="price">Rs.899.99 <span>Rs. 999.90</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-
-                </div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
-            <div class="boxx">
-                <div class="icons">
-                    <a href="" class="fas fa-heart"></a>
-                    <a href="" class="fas fa-share"></a>
-                    <a href="" class="fas fa-eye"></a>
-                </div>
-                <img src="/images/product-6.png" alt="">
-                <div class="content">
-                    <h3>nike shoes</h3>
-                    <div class="price">Rs.899.99 <span>Rs. 999.90</span></div>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-
-                    </div>
-
-                </div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
+        <!-- scroll top button  -->
+        <div class="down">
+            
+            <a href="#about" class="top">
+                <img src="/images/rocket.png" alt="">
+            </a>
+            
         </div>
 
-    </section>
-    <!-- product section ends -->
-    <!-- featured section starts  -->
-    <section class="featured" id="featured">
-        <h1 class="header"><span>Featured</span> Products</h1>
-        <div class="row">
-            <div class="image-container">
-                <div class="small-image">
-                    <img src="/images/f-img-1.1.png" class="featured-image-1" alt="">
-                    <img src="/images/f-img-1.2.png" class="featured-image-1" alt="">
-                    <img src="/images/f-img-1.3.png" class="featured-image-1" alt="">
-                    <img src="/images/f-img-1.4.png" class="featured-image-1" alt="">
-                </div>
-                <div class="big-image">
-                    <img src="/images/f-img-1.1.png" class="big-image-1" alt="">
 
-                </div>
-            </div>
-            <div class="content">
-                <h3>New nike airmax Shoes</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sunt dolore hic quis quo nostrum
-                    exercitationem tempora dolores enim quod. Eaque consequuntur alias fugit atque nobis reiciendis
-                    ratione recusandae nostrum!</p>
-                <div class="price">Rs. 699 <span>Rs. 1500</span></div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="image-container">
-                <div class="small-image">
-                    <img src="/images/f-img-2.1.png" class="featured-image-2" alt="">
-                    <img src="/images/f-img-2.2.png" class="featured-image-2" alt="">
-                    <img src="/images/f-img-2.3.png" class="featured-image-2" alt="">
-                    <img src="/images/f-img-2.4.png" class="featured-image-2" alt="">
-                </div>
-                <div class="big-image">
-                    <img src="/images/f-img-2.1.png" class="big-image-2" alt="">
 
-                </div>
-            </div>
-            <div class="content">
-                <h3>New nike airmax Shoes</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i2 <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sunt dolore hic quis quo nostrum
-                    exercitationem tempora dolores enim quod. Eaque consequuntur alias fugit atque nobis reiciendis
-                    ratione recusandae nostrum!</p>
-                <div class="price">Rs. 699 <span>Rs. 1500</span></div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="image-container">
-                <div class="small-image">
-                    <img src="/images/f-img-3.1.png" class="featured-image-3" alt="">
-                    <img src="/images/f-img-3.2.png" class="featured-image-3" alt="">
-                    <img src="/images/f-img-3.3.png" class="featured-image-3" alt="">
-                    <img src="/images/f-img-3.4.png" class="featured-image-3" alt="">
-                </div>
-                <div class="big-image">
-                    <img src="/images/f-img-3.1.png" class="big-image-3" alt="">
 
-                </div>
-            </div>
-            <div class="content">
-                <h3>New nike airmax Shoes</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i2 <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore sunt dolore hic quis quo nostrum
-                    exercitationem tempora dolores enim quod. Eaque consequuntur alias fugit atque nobis reiciendis
-                    ratione recusandae nostrum!</p>
-                <div class="price">Rs. 699 <span>Rs. 1500</span></div>
-                <a href="#" class="btn">add to cart</a>
-            </div>
-        </div>
-    </section>
-    <!-- featured section  ends -->
-    <!-- reviwe section starts Here -->
-    <section class="review" id="review">
-        <h1 class="heading">Customer <span>reviews</span></h1>
-        <div class="box-container">
-            <div class="boxx">
-                <img src="/yahaiyou.jpeg" alt="">
-                <h3>Yahaiyou rahman</h3>
-                <p>Apun ko idhar se aisa joota mila ki saari bandi set hogayi.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
 
-            </div>
-            <div class="boxx">
-                <img src="/nasha.jpeg" alt="">
-                <h3>Nasheri Narzary</h3>
-                <p>Bohot hi nashile joote hain idhar.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+        <!-- jquery cdn link  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-                </div>
+        <!-- custom js file link  -->
+        <script src="/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 
-            </div>
-            <div class="boxx">
-                <img src="/pk2.jpg" alt="">
-                <h3>Pritam Das</h3>
-                <p>Apna hi website hain kaisa lage batana.</p>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
 
-            </div>
-        </div>
-    </section>
-    <!-- reviwe section ends Here -->
-    <!-- newsletter secton stars here  -->
-    <section class="newsletter">
-        <div class="content">
-            <h3>Monthly newsletter</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum sequi vero deleniti ullam iste voluptas
-                est amet! Iure sit atque magni!</p>
-            <form action="">
-                <input type="email" placeholder="enter your email" name="email" id="email">
-                <input type="submit" class="btn" value="send">
-            </form>
 
-        </div>
-    </section>
-    <!-- footer section  -->
-    <footer class="footer">
-        <div class="box-container">
-            <div class="boxx">
-                <h4>our stores</h4>
-                <a href="#">India</a>
-                <a href="#">china</a>
-                <a href="#">U.S.A.</a>
-                <a href="#">Russia</a>
-            </div>
-            <div class="boxx">
-                <h4>Quick links</h4>
-                <a href="#home">home</a>
-                <a href="#products">products</a>
-                <a href="#featured">featured</a>
-                <a href="#review">review</a>
-            </div>
-            <div class="boxx">
-                <h4>extra links</h4>
-                <a href="#home">my account</a>
-                <a href="#products">my favorite</a>
-                <a href="#featured">my order</a>
-                <a href="#review">exciting offers</a>
-            </div>
-            <div class="boxx">
-                <h4>Folllow us</h4>
-                <a href="www.facebook.com">Facebbok</a>
-                <a href="www.twitter.com">Twitter</a>
-                <a href="www.instagram.com">Instagram</a>
-                <a href="www.tinder.com">Tinder</a>
-            </div>
-            <div class="credit">created by <span>mr Pritam das</span> | all rights resreved &copy;</div>
-        </div>
 
-    </footer>
-
-    <!-- footer section  -->
-    <!-- newsletter secton ends here  -->
-
-    <script src="js1.js"></script>
-    <script src="/chat.js"></script>
-    <script src="/response.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</div>
 </body>
-
 </html>
