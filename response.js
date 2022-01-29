@@ -17,6 +17,14 @@ function getBotResponse(inputval) {
     else if(input=="i love you"){
         return "I love only Pritam"
     }
+    else if(input=="deboshmita"){
+        return "oh pritam ki dost, he likes her are you debo?"
+        
+    }
+    else if(input=="yes"){
+        return "achaa. hi"
+
+    }
     else if(input=="Hello pk"){
         return "Kaun hain tu bsdk"
     }
